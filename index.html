@@ -4,6 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Happy Time Entertainment - Espectáculos artísticos, entretenimiento y experiencias interactivas en Cusco, Perú." />
+  <meta name="keywords" content="espectáculos Cusco, show de payasos, show de fuego, zanqueros, entretenimiento familiar, eventos corporativos" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0B0B12" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Happy Time Entertainment" />
+  <meta property="og:title" content="Happy Time Entertainment | Shows y Espectáculos en Cusco" />
+  <meta property="og:description" content="Shows de payasos, luces LED, fuego y zanqueros para eventos corporativos, culturales y familiares en Cusco." />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Happy+Time+Entertainment" />
+  <meta property="og:locale" content="es_PE" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Happy Time Entertainment | Cusco, Perú" />
+  <meta name="twitter:description" content="Espectáculos artísticos, shows de fuego, luces y zanqueros para tu evento en Cusco." />
+  <meta name="twitter:image" content="https://via.placeholder.com/1200x630?text=Happy+Time+Entertainment" />
   <title>Happy Time Entertainment | Cusco, Perú</title>
 
   <!-- Google Fonts -->
@@ -11,7 +24,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="/src/styles/styles.css" />
+  <link rel="stylesheet" href="src/styles/styles.css" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EntertainmentBusiness",
+      "name": "Happy Time Entertainment",
+      "description": "Espectáculos artísticos, shows de payasos, luces, fuego y zanqueros en Cusco, Perú.",
+      "telephone": "+51992034877",
+      "email": "happytimerecreaciones@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Urb. Cachimayo C-7, Av. La Cultura, San Sebastián",
+        "addressLocality": "Cusco",
+        "addressRegion": "Cusco",
+        "postalCode": "08000",
+        "addressCountry": "PE"
+      },
+      "openingHours": "Mo-Su 09:00-21:00"
+    }
+  </script>
 </head>
 <body>
 
@@ -228,7 +260,7 @@
         </div>
 
         <div class="shows__slider" role="region" aria-label="Galería de espectáculos">
-          <article class="show-card reveal" data-delay="0">
+          <article class="show-card reveal" data-label="Show de Payasos" data-delay="0">
             <div class="show-card__visual show-card__visual--clown"></div>
             <div class="show-card__content">
               <h3 class="show-card__title">Show de Payasos</h3>
@@ -237,7 +269,7 @@
             </div>
           </article>
 
-          <article class="show-card reveal" data-delay="100">
+          <article class="show-card reveal" data-label="Show de Luces" data-delay="100">
             <div class="show-card__visual show-card__visual--lights">💡</div>
             <div class="show-card__content">
               <h3 class="show-card__title">Show de Luces</h3>
@@ -246,7 +278,7 @@
             </div>
           </article>
 
-          <article class="show-card reveal" data-delay="200">
+          <article class="show-card reveal" data-label="Zancos y Personajes" data-delay="200">
             <div class="show-card__visual show-card__visual--stilts">🎭</div>
             <div class="show-card__content">
               <h3 class="show-card__title">Zancos y Personajes</h3>
@@ -255,7 +287,7 @@
             </div>
           </article>
 
-          <article class="show-card reveal" data-delay="300">
+          <article class="show-card reveal" data-label="Show de Fuego" data-delay="300">
             <div class="show-card__visual show-card__visual--fire">🔥</div>
             <div class="show-card__content">
               <h3 class="show-card__title">Show de Fuego</h3>
@@ -264,7 +296,7 @@
             </div>
           </article>
 
-          <article class="show-card reveal" data-delay="400">
+          <article class="show-card reveal" data-label="Show de Horas Locas" data-delay="400">
             <div class="show-card__visual show-card__visual--party">🎉</div>
             <div class="show-card__content">
               <h3 class="show-card__title">Horas Locas</h3>
@@ -273,7 +305,7 @@
             </div>
           </article>
 
-          <article class="show-card reveal" data-delay="500">
+          <article class="show-card reveal" data-label="Y Mucho Más" data-delay="500">
             <div class="show-card__visual show-card__visual--more">✨</div>
             <div class="show-card__content">
               <h3 class="show-card__title">Y Mucho Más...</h3>
@@ -416,6 +448,7 @@
     <span class="whatsapp-float__icon"></span>
   </a>
 
+  <script src="https://unpkg.com/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js" defer></script>
   <script src="src/js/main.js" defer></script>
 </body>
 </html>

@@ -42,6 +42,18 @@
 
   // ---------- 3. SCROLL REVEAL (Intersection Observer) ----------
   const revealElements = document.querySelectorAll('.reveal');
+  const tiltCards = document.querySelectorAll('.show-card');
+
+  if (window.VanillaTilt && tiltCards.length) {
+    VanillaTilt.init(tiltCards, {
+      max: 12,
+      speed: 460,
+      glare: true,
+      "max-glare": 0.2,
+      scale: 1.02,
+      transition: true
+    });
+  }
 
   const revealObserver = new IntersectionObserver(
     (entries) => {
