@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Time Entertainment · Cusco, Perú</title>
     <meta name="description" content="Happy Time Entertainment — Espectáculos y entretenimiento premium en Cusco, Perú. Shows de lujo, payasos, luces, fuego y más.">
+    <meta name="keywords" content="entretenimiento, Cusco, shows, payasos, luces, fuego, zancos, horas locas, eventos, fiestas, espectáculos, Happy Time">
+    <meta name="author" content="Happy Time Entertainment">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Happy Time Entertainment · Cusco, Perú">
+    <meta property="og:description" content="Espectáculos y entretenimiento premium en Cusco, Perú. Shows de lujo, payasos, luces, fuego y más.">
+    <meta property="og:image" content="src/images/logo.png">
+    <meta property="og:url" content="https://happytimerecreaciones.github.io/happy/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Happy Time Entertainment">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Happy Time Entertainment · Cusco, Perú">
+    <meta name="twitter:description" content="Espectáculos y entretenimiento premium en Cusco, Perú.">
+    <meta name="twitter:image" content="src/images/logo.png">
     <meta name="google-site-verification" content="EEdRxJcNvG_EqkH8SA6GlKXrF24aqHbthnFvGGANHC0" />
     <!-- Fuentes: Playfair Display (display), Cinzel (logo), Montserrat (body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -276,6 +289,26 @@
     <a href="https://wa.me/51992034877" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
+
+    <!-- Modal WhatsApp -->
+    <div class="whatsapp-modal" id="whatsappModal" aria-hidden="true">
+        <div class="whatsapp-modal__backdrop"></div>
+        <div class="whatsapp-modal__content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <div class="whatsapp-modal__icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <h3 id="modalTitle">¿Tienes dudas?</h3>
+            <p>Te contactamos por WhatsApp para resolver todas tus preguntas sobre nuestros espectáculos.</p>
+            <div class="whatsapp-modal__actions">
+                <a href="https://wa.me/51992034877?text=Hola%2C%20tengo%20dudas%20sobre%20sus%20espect%C3%A1culos" target="_blank" class="btn-cta">
+                    <i class="fa-brands fa-whatsapp"></i> Sí, contactar
+                </a>
+                <button class="btn-cta whatsapp-modal__cancel" id="closeModal">
+                    Cancelar
+                </button>
+            </div>
+        </div>
+    </div>
 
     <script src="src/js/main.js"></script>
 </body>

@@ -746,9 +746,91 @@ button {
   transform: scale(1.08);
 }
 
+.whatsapp-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.whatsapp-modal.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+.whatsapp-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.whatsapp-modal__content {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(180deg, #1a0505, #0A0A0A);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 24px;
+  padding: 2.5rem 2rem;
+  max-width: 420px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+  transform: translateY(20px);
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.is-open .whatsapp-modal__content {
+  transform: translateY(0);
+}
+.whatsapp-modal__icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 auto 1.25rem;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
+}
+.whatsapp-modal h3 {
+  font-family: "Playfair Display", "Cinzel", serif;
+  font-size: 1.5rem;
+  color: #D4AF37;
+  margin-bottom: 0.75rem;
+}
+.whatsapp-modal p {
+  color: rgba(245, 240, 225, 0.7);
+  font-size: 0.95rem;
+  margin-bottom: 1.75rem;
+  line-height: 1.6;
+}
+.whatsapp-modal__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+.whatsapp-modal__cancel {
+  background: transparent;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  color: #F5F0E1;
+}
+.whatsapp-modal__cancel:hover {
+  background: rgba(212, 175, 55, 0.1);
+  color: #D4AF37;
+}
+
 @media (min-width: 640px) {
   .contacto__inner {
     grid-template-columns: 1fr 1fr;
     align-items: start;
+  }
+  .whatsapp-modal__actions {
+    flex-direction: row;
   }
 }
