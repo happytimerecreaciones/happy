@@ -532,8 +532,10 @@ button {
   z-index: 2;
   max-width: 900px;
 }
-.hero img {
-  border-radius: 40%;
+.hero__logo {
+  display: block;
+  margin: 0 auto;
+  height: auto;
 }
 .hero__tag {
   display: inline-block;

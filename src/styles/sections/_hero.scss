@@ -31,8 +31,10 @@
         max-width: 900px;
     }
 
-    img {
-       border-radius: 40%;
+    &__logo {
+        display: block;
+        margin: 0 auto;
+        height: auto;
     }
 
     &__tag {
